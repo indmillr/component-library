@@ -2,18 +2,37 @@
   "name": "component-library",
   "version": "1.0.0",
   "description": "A component library built with React and Typescript",
-  "main": "index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "build": "rm -rf dist/ && prettier --write src/ && npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/indmillr/component-library.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "indmillr",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/indmillr/component-library/issues"
   },
-  "homepage": "https://github.com/indmillr/component-library#readme"
+  "homepage": "https://github.com/indmillr/component-library#readme",
+  "devDependencies": {
+    "@types/node": "^18.6.5",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.7.4"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }
