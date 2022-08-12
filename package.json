@@ -1,0 +1,24 @@
+{
+  "name": "component-library",
+  "version": "1.0.0",
+  "description": "A component library built with React and Typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/indmillr/component-library.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/indmillr/component-library/issues"
+  },
+  "homepage": "https://github.com/indmillr/component-library#readme",
+  "devDependencies": {
+    "@types/react": "^18.0.17",
+    "react": "^18.2.0",
+    "typescript": "^4.7.4"
+  }
+}
