@@ -99,14 +99,14 @@
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true /* Skip type checking all .d.ts files. */,
 
-    "jsx": "react",
-    "module": "ESNext",
-    "declaration": true,
+    "jsx": "react" /* to recognize JSX */,
+    "module": "ESNext" /* updated ES6 */,
+    "declaration": true /* allow access to library */,
     "declarationDir": "types",
-    "sourceMap": true,
-    "outDir": "dist",
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "emitDeclarationOnly": true
+    "sourceMap": true /* for debugging */,
+    "outDir": "dist" /* lib bundle */,
+    "moduleResolution": "node" /* how node finds modules (logic) */,
+    "allowSyntheticDefaultImports": true /* if not exporting by default, default will be assumed*/,
+    "emitDeclarationOnly": true /* rollup bundles JS -- TS just bundles type files */
   }
 }
