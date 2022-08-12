@@ -1,5 +1,5 @@
 {
-  "name": "component-library",
+  "name": "@indmillr/component-library",
   "version": "0.0.1",
   "description": "A component library built with React and Typescript",
   "scripts": {
@@ -31,5 +31,8 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg/github.com/indmillr"
+  }
 }
